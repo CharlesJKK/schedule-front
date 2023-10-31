@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user.css">
+    <title>Registro</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/ScheduleEase2.png" alt="Logo da Empresa">
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="login-box">
+            <h2>Registrar</h2>
+            <p class="register-link">Se ja possui uma conta você pode <a href="login.html">Logar aqui</a>!</p>
+            
+            <div class="input-icon">
+                <label class="input-label" for="username">Nome</label>
+                <input type="text" id="username" class="email-input" placeholder="Coloque seu nome aqui">
+              </div>
+
+            <div class="input-icon">
+              <label class="input-label" for="email">Email</label>
+              <input type="text" id="sign-up-email" class="email-input" placeholder="Coloque seu email aqui">
+            </div>
+        
+            <div class="input-icon">
+              <label class="input-label" for="password">Senha</label>
+              <input type="password" id="password" class="password-input" placeholder="Coloque sua senha aqui">
+            </div>
+
+            <div class="input-icon">
+                <label class="input-label" for="confirmpassword">Confirmar senha</label>
+                <input type="password" id="confirmpassword" class="password-input" placeholder="Confime sua senha aqui">
+              </div>
+        
+            <button class="login-button" onclick="signUp()">Registrar</button>
+        </div>
+        
+        <div class="right-container">
+            <div class="image-container">
+                <img src="imagens/Frame.png" alt="Imagem de Fundo">
+            </div>
+            <div class="start-session">
+                Criar uma conta
+            </div>
+        </div>
+    </div>
+
+    <script src="user.js"></script>
+</body>
+</html>

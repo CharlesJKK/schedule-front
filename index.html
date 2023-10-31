@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Meu Site</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imagens/ScheduleEase.png" alt="Logo da Empresa">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato/Localização</a></li>
+            </ul>
+        </nav>
+        <div class="perfil">
+            <img src="imagens/Ellipse 1.png" alt="">
+        </div>
+    </header>
+
+    <section class="conteudo-home">
+        <h1 class="titulohora">Seus Horários</h1>
+        <button id="adicionarAgendamento" class="botao-adicionar">Adicionar Agendamento</button>
+        <!-- Cards de agendamentos -->
+        <div class="agendamento-card">
+            <h2>(Modalidade ex: Futebol)</h2>
+            <p>(Hora ex: 09:00)</p>
+            <p>(Data ex: 25 de Outubro)</p>
+            <a href="pagina_de_agendamentos.html" class="botao-agendamento">Consultar</a>
+        </div>
+
+        
+        <div id="cards-container"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Meu Site</p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
+
