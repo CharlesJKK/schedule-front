@@ -186,6 +186,10 @@ footer {
     margin: 20px 0;
 }
 
+#map {
+    width: 50%; /* Defina a largura desejada, por exemplo, 100% da largura da página */
+    height: 300px; /* Defina a altura desejada, por exemplo, 300 pixels */
+}
 
 /* Estilos para o conteúdo da página "Sobre nós" */
 .conteudo-sobre {

@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqFgK-wfqjrVlto3sva29zNx3x-TqAGY8S&callback=initMap" async defer></script>
     <title>Contato/Localização</title>
 </head>
 <body>
+
     <header>
         <div class="logo">
             <img src="imagens/ScheduleEase.png" alt="Logo da Empresa">
@@ -22,7 +24,7 @@
             <img src="imagens/Ellipse 1.png" alt="">
         </div>
     </header>
-    
+
     <section class="conteudo-centralizado">
         <div class="info-contato">
             <h1>Contato</h1>
@@ -34,6 +36,46 @@
             <p>R. Guilherme Pinto, 114 - Graças, Recife - PE, 52011-210</p>
         </div>
         <hr>
+
+        <!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Marker</title>
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqFgK-wfqjrVlto3sva29zNx3x-TqAGY8&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <gmp-map id="map" center="-8.051819801330566,-34.90216064453125" zoom="17" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="-8.051819801330566,-34.90216064453125" title="My location">
+        </gmp-advanced-marker>
+    </gmp-map>
+
+    <script>
+        function initMap() {
+            // Coordenadas do endereço fixo (por exemplo, para o Googleplex)
+            var myLatLng = { lat: 37.4219999, lng: -122.0840575 };
+        
+            // Opções do mapa
+            var mapOptions = {
+                center: myLatLng,
+                zoom: 17,
+            };
+        
+            // Criar o mapa
+            var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        
+            // Adicionar marcador
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map,
+                title: 'Endereço Fixo',
+            });
+        }
+    </script>
+</body>
+</html>
     </section>
 
     <footer>
